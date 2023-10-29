@@ -22,7 +22,7 @@ init:
         "persistent.sprite_time=='night'",im.MatrixColor( "mods/Steps/Materials/Sprites/bloody_pioneer.png", im.matrix.tint(0.63, 0.78, 0.82) ),
         True, "mods/Steps/Materials/Sprites/bloody_pioneer.png" )
         #* алиса в спортивке удивленная
-    image dv sport surprised = ConditionSwitch(
+    image dv sport surpr = ConditionSwitch(
         "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/Steps/Materials/Sprites/Alice/dv_sport_surpeise.png", im.matrix.tint(0.94, 0.82, 1.0) ),
         "persistent.sprite_time=='night'",im.MatrixColor( "mods/Steps/Materials/Sprites/Alice/dv_sport_surpeise.png", im.matrix.tint(0.63, 0.78, 0.82) ),
         True, "mods/Steps/Materials/Sprites/Alice/dv_sport_surpeise.png" )
