@@ -2,7 +2,7 @@ init:
     # 3066221854 код
     #===============================================
     # объявление мода
-    $ mods['Steps'] = u"{font=Steps/Materials/Shrift/ofont.ru_Sehnsucht_Font.ttf}{color=#ff0000}Шаги{/color}{/font}"
+    $ mods['Steps'] = u'{color=#ff0000}Шаги{/color}'
     #===============================================
     
     # консоль разраба
