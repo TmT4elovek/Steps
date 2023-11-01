@@ -1,5 +1,5 @@
 init:
-    # 3066398321 код
+    # 
     #===============================================
     # объявление мода
     $ mods['Steps'] = u'{font=mods/Steps/Materials/Shrift/Font.ttf}{color=#ff0000}Шаги{/color}{/font}'
@@ -11,23 +11,23 @@ init:
     #===============================================
     # объявление персонажей
         #* гг
-    $ gg = Character(name='Главный герой', what_color='#ffdd7d', color='#3ef511')
+    $ ggzs_gg = Character(name='Главный герой', what_color='#ffdd7d', color='#3ef511')
     #===============================================
 
 
     #===============================================
     # объявление спрайтов
         #* пионер в крови
-    image pion = ConditionSwitch(
+    image ggzs_pion = ConditionSwitch(
         "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/Steps/Materials/Sprites/bloody_pioneer.png", im.matrix.tint(0.94, 0.82, 1.0) ),
         "persistent.sprite_time=='night'",im.MatrixColor( "mods/Steps/Materials/Sprites/bloody_pioneer.png", im.matrix.tint(0.63, 0.78, 0.82) ),
         True, "mods/Steps/Materials/Sprites/bloody_pioneer.png" )
         #* алиса в спортивке удивленная
-    image dv sport surpr = ConditionSwitch(
+    image dv sport_surprised = ConditionSwitch(
         "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/Steps/Materials/Sprites/Alice/dv_sport_surpeise.png", im.matrix.tint(0.94, 0.82, 1.0) ),
         "persistent.sprite_time=='night'",im.MatrixColor( "mods/Steps/Materials/Sprites/Alice/dv_sport_surpeise.png", im.matrix.tint(0.63, 0.78, 0.82) ),
         True, "mods/Steps/Materials/Sprites/Alice/dv_sport_surpeise.png" )
-    image dv sport dream = ConditionSwitch(
+    image dv sport_dream = ConditionSwitch(
         "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/Steps/Materials/Sprites/Alice/dv_sport_dream.png", im.matrix.tint(0.94, 0.82, 1.0) ),
         "persistent.sprite_time=='night'",im.MatrixColor( "mods/Steps/Materials/Sprites/Alice/dv_sport_dream.png", im.matrix.tint(0.63, 0.78, 0.82) ),
         True, "mods/Steps/Materials/Sprites/Alice/dv_sport_dream.png" )
@@ -59,16 +59,16 @@ init:
     #===============================================
     # объявление бг
         #* пустой домик
-    image int_empty_house = 'mods/Steps/Materials/BackGrounds/empty_house.jpg'
+    image bg int_empty_house = 'mods/Steps/Materials/BackGrounds/empty_house.jpg'
         #* чистая комната семена
-    image int_semen_room = 'mods/Steps/Materials/BackGrounds/int_semen_room_clean2.jpg'
+    image bg int_semen_room = 'mods/Steps/Materials/BackGrounds/int_semen_room_clean2.jpg'
     #===============================================
 
 
     #===============================================
     # объявление артов
         #* семен и алиса в катакомбах
-    image cg_s_and_a_catacombs = 'mods/Steps/Materials/Arts/s_and_a_catacombs.jpg'
+    image cg cg_s_and_a_catacombs = 'mods/Steps/Materials/Arts/s_and_a_catacombs.png'
     #===============================================
 
 
